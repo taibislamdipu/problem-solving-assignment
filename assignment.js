@@ -4,12 +4,12 @@
 // Problem 1 : feetToMile //dosomiker por 2 ghor
 function feetToMile(feet) {
 
-    var mile = feet / 5280;
+    const mile = feet / 5280;
     return mile;
 }
 
 var result = feetToMile(50000);
-console.log(result);
+console.log("Answer : " + result.toFixed(2));
 
 
 
@@ -24,14 +24,14 @@ function woodCalculator(chair, table, bed) {
 }
 
 var result = woodCalculator(12, 12, 8);
-console.log(result)
+console.log("Cubic feet of wood require : " + result)
 
 
 
 // Problem 3: brickCalculator
 function brickCalculator(floorNumber) {
     var perFloor = floorNumber * 1000;
-    var totalBrick;
+    let totalBrick;
 
     if (floorNumber > 0 && floorNumber <= 10) {
         totalBrick = perFloor * 15;
@@ -49,7 +49,7 @@ function brickCalculator(floorNumber) {
 }
 
 var result = brickCalculator(100);
-console.log(result);
+console.log("Total Bricks: " + result);
 
 
 
@@ -67,4 +67,4 @@ function tinyFriend(friend) {
 }
 
 var result = tinyFriend(['Avi Miller', 'Nayan', 'roy', 'denver', 'Bob Dylan']);
-console.log(result);
+console.log("Shortest Name is : " + result);
